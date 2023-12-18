@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		E21289702B2FECC70036C14F /* Meals_SeafoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E212896F2B2FECC70036C14F /* Meals_SeafoodApp.swift */; };
-		E21289722B2FECC70036C14F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21289712B2FECC70036C14F /* ContentView.swift */; };
 		E21289742B2FECC80036C14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21289732B2FECC80036C14F /* Assets.xcassets */; };
 		E21289772B2FECC80036C14F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21289762B2FECC80036C14F /* Preview Assets.xcassets */; };
+		E21289812B2FED4A0036C14F /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21289802B2FED4A0036C14F /* Meals.swift */; };
+		E21289832B2FED590036C14F /* APIListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21289822B2FED590036C14F /* APIListManager.swift */; };
+		E2DD69592B3077D5002BB286 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69582B3077D5002BB286 /* Alamofire */; };
+		E2DD695B2B30781C002BB286 /* SeaFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD695A2B30781C002BB286 /* SeaFoodView.swift */; };
+		E2DD695D2B307B47002BB286 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD695C2B307B47002BB286 /* DetailView.swift */; };
+		E2DD695F2B307D9F002BB286 /* APIDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD695E2B307D9F002BB286 /* APIDetailManager.swift */; };
+		E2DD69612B307DC5002BB286 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD69602B307DC5002BB286 /* MealDetail.swift */; };
+		E2DD69642B308062002BB286 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69632B308062002BB286 /* SDWebImage */; };
+		E2DD69662B308062002BB286 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69652B308062002BB286 /* SDWebImageMapKit */; };
+		E2DD69692B308E4A002BB286 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69682B308E4A002BB286 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E212896C2B2FECC70036C14F /* Meals_Seafood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meals_Seafood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E212896F2B2FECC70036C14F /* Meals_SeafoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals_SeafoodApp.swift; sourceTree = "<group>"; };
-		E21289712B2FECC70036C14F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E21289732B2FECC80036C14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21289762B2FECC80036C14F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E21289802B2FED4A0036C14F /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		E21289822B2FED590036C14F /* APIListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIListManager.swift; sourceTree = "<group>"; };
+		E2DD695A2B30781C002BB286 /* SeaFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaFoodView.swift; sourceTree = "<group>"; };
+		E2DD695C2B307B47002BB286 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E2DD695E2B307D9F002BB286 /* APIDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetailManager.swift; sourceTree = "<group>"; };
+		E2DD69602B307DC5002BB286 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2DD69692B308E4A002BB286 /* SDWebImageSwiftUI in Frameworks */,
+				E2DD69642B308062002BB286 /* SDWebImage in Frameworks */,
+				E2DD69662B308062002BB286 /* SDWebImageMapKit in Frameworks */,
+				E2DD69592B3077D5002BB286 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,10 @@
 		E212896E2B2FECC70036C14F /* Meals_Seafood */ = {
 			isa = PBXGroup;
 			children = (
+				E212897F2B2FECF00036C14F /* View */,
+				E212897D2B2FECE00036C14F /* Model */,
+				E212897E2B2FECE70036C14F /* ViewModel */,
 				E212896F2B2FECC70036C14F /* Meals_SeafoodApp.swift */,
-				E21289712B2FECC70036C14F /* ContentView.swift */,
 				E21289732B2FECC80036C14F /* Assets.xcassets */,
 				E21289752B2FECC80036C14F /* Preview Content */,
 			);
@@ -65,6 +85,33 @@
 				E21289762B2FECC80036C14F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E212897D2B2FECE00036C14F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E21289802B2FED4A0036C14F /* Meals.swift */,
+				E2DD69602B307DC5002BB286 /* MealDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E212897E2B2FECE70036C14F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E21289822B2FED590036C14F /* APIListManager.swift */,
+				E2DD695E2B307D9F002BB286 /* APIDetailManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E212897F2B2FECF00036C14F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2DD695C2B307B47002BB286 /* DetailView.swift */,
+				E2DD695A2B30781C002BB286 /* SeaFoodView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +130,12 @@
 			dependencies = (
 			);
 			name = Meals_Seafood;
+			packageProductDependencies = (
+				E2DD69582B3077D5002BB286 /* Alamofire */,
+				E2DD69632B308062002BB286 /* SDWebImage */,
+				E2DD69652B308062002BB286 /* SDWebImageMapKit */,
+				E2DD69682B308E4A002BB286 /* SDWebImageSwiftUI */,
+			);
 			productName = Meals_Seafood;
 			productReference = E212896C2B2FECC70036C14F /* Meals_Seafood.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,11 @@
 				Base,
 			);
 			mainGroup = E21289632B2FECC70036C14F;
+			packageReferences = (
+				E2DD69572B3077D5002BB286 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E2DD69622B308062002BB286 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				E2DD69672B308E4A002BB286 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = E212896D2B2FECC70036C14F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +195,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21289722B2FECC70036C14F /* ContentView.swift in Sources */,
+				E21289812B2FED4A0036C14F /* Meals.swift in Sources */,
+				E2DD695D2B307B47002BB286 /* DetailView.swift in Sources */,
 				E21289702B2FECC70036C14F /* Meals_SeafoodApp.swift in Sources */,
+				E2DD695F2B307D9F002BB286 /* APIDetailManager.swift in Sources */,
+				E2DD69612B307DC5002BB286 /* MealDetail.swift in Sources */,
+				E21289832B2FED590036C14F /* APIListManager.swift in Sources */,
+				E2DD695B2B30781C002BB286 /* SeaFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +407,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2DD69572B3077D5002BB286 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		E2DD69622B308062002BB286 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.7;
+			};
+		};
+		E2DD69672B308E4A002BB286 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2DD69582B3077D5002BB286 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DD69572B3077D5002BB286 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		E2DD69632B308062002BB286 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DD69622B308062002BB286 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		E2DD69652B308062002BB286 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DD69622B308062002BB286 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		E2DD69682B308E4A002BB286 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DD69672B308E4A002BB286 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E21289642B2FECC70036C14F /* Project object */;
 }
