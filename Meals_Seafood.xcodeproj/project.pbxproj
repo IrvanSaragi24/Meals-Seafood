@@ -20,6 +20,8 @@
 		E2DD69642B308062002BB286 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69632B308062002BB286 /* SDWebImage */; };
 		E2DD69662B308062002BB286 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69652B308062002BB286 /* SDWebImageMapKit */; };
 		E2DD69692B308E4A002BB286 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E2DD69682B308E4A002BB286 /* SDWebImageSwiftUI */; };
+		E2DD696B2B30B16F002BB286 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD696A2B30B16F002BB286 /* WebViewManager.swift */; };
+		E2DD696F2B30BE9C002BB286 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DD696E2B30BE9C002BB286 /* SearchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		E2DD695C2B307B47002BB286 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E2DD695E2B307D9F002BB286 /* APIDetailManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDetailManager.swift; sourceTree = "<group>"; };
 		E2DD69602B307DC5002BB286 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		E2DD696A2B30B16F002BB286 /* WebViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
+		E2DD696E2B30BE9C002BB286 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 		E212896E2B2FECC70036C14F /* Meals_Seafood */ = {
 			isa = PBXGroup;
 			children = (
+				E2DD69902B312D0D002BB286 /* SplashScreen */,
 				E212897F2B2FECF00036C14F /* View */,
 				E212897D2B2FECE00036C14F /* Model */,
 				E212897E2B2FECE70036C14F /* ViewModel */,
@@ -100,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				E21289822B2FED590036C14F /* APIListManager.swift */,
+				E2DD696E2B30BE9C002BB286 /* SearchManager.swift */,
+				E2DD696A2B30B16F002BB286 /* WebViewManager.swift */,
 				E2DD695E2B307D9F002BB286 /* APIDetailManager.swift */,
 			);
 			path = ViewModel;
@@ -112,6 +119,13 @@
 				E2DD695A2B30781C002BB286 /* SeaFoodView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E2DD69902B312D0D002BB286 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +214,8 @@
 				E21289702B2FECC70036C14F /* Meals_SeafoodApp.swift in Sources */,
 				E2DD695F2B307D9F002BB286 /* APIDetailManager.swift in Sources */,
 				E2DD69612B307DC5002BB286 /* MealDetail.swift in Sources */,
+				E2DD696B2B30B16F002BB286 /* WebViewManager.swift in Sources */,
+				E2DD696F2B30BE9C002BB286 /* SearchManager.swift in Sources */,
 				E21289832B2FED590036C14F /* APIListManager.swift in Sources */,
 				E2DD695B2B30781C002BB286 /* SeaFoodView.swift in Sources */,
 			);
@@ -341,8 +357,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -370,8 +386,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
