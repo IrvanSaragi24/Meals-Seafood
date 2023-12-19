@@ -73,7 +73,6 @@
 		E212896E2B2FECC70036C14F /* Meals_Seafood */ = {
 			isa = PBXGroup;
 			children = (
-				E2DD69902B312D0D002BB286 /* SplashScreen */,
 				E212897F2B2FECF00036C14F /* View */,
 				E212897D2B2FECE00036C14F /* Model */,
 				E212897E2B2FECE70036C14F /* ViewModel */,
@@ -119,13 +118,6 @@
 				E2DD695A2B30781C002BB286 /* SeaFoodView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		E2DD69902B312D0D002BB286 /* SplashScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SplashScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

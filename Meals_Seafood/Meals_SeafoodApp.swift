@@ -11,9 +11,8 @@ import SwiftUI
 struct Meals_SeafoodApp: App {
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//            SeaFoodView()
-            DetailView(mealID: "52772")
+            SeaFoodView()
+//            DetailView(mealID: "52772")
         }
     }
 }
