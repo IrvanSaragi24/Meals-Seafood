@@ -68,7 +68,13 @@ struct DetailView: View {
                                     // Display ingredients (first half)
                                     Text(mealDetail.strIngredient1 ?? "")
                                     Text(mealDetail.strIngredient2 ?? "")
-                                    // ... continue for other ingredients
+                                    Text(mealDetail.strIngredient3 ?? "")
+                                    Text(mealDetail.strIngredient4 ?? "")
+                                    Text(mealDetail.strIngredient5 ?? "")
+                                    Text(mealDetail.strIngredient6 ?? "")
+                                    Text(mealDetail.strIngredient7 ?? "")
+                                    Text(mealDetail.strIngredient8 ?? "")
+                                    Text(mealDetail.strIngredient9 ?? "")
                                     Text(mealDetail.strIngredient10 ?? "")
                                 }
                                 .padding(.trailing, 10)
@@ -76,7 +82,14 @@ struct DetailView: View {
                                 VStack(alignment: .leading) {
                                     // Display ingredients (second half)
                                     Text(mealDetail.strIngredient11 ?? "")
-                                    // ... continue for other ingredients
+                                    Text(mealDetail.strIngredient12 ?? "")
+                                    Text(mealDetail.strIngredient13 ?? "")
+                                    Text(mealDetail.strIngredient14 ?? "")
+                                    Text(mealDetail.strIngredient15 ?? "")
+                                    Text(mealDetail.strIngredient16 ?? "")
+                                    Text(mealDetail.strIngredient17 ?? "")
+                                    Text(mealDetail.strIngredient18 ?? "")
+                                    Text(mealDetail.strIngredient19 ?? "")
                                     Text(mealDetail.strIngredient20 ?? "")
                                 }
                             }
